@@ -23,6 +23,75 @@
     <link rel="manifest" href="assets/img/favicons/manifest.json">
     <meta name="msapplication-TileImage" content="assets/img/illustrations/logonew.png">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color:#c9c9c9;
+    display: grid;
+    place-items: center;
+}
+
+section {
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.slider-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    animation: scrolling 20s linear infinite;
+
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.slider-items img {
+    width: 12%;
+    margin: 20px;
+
+}
+    </style>
 
 
     <!-- ===============================================-->
@@ -56,10 +125,11 @@
               <li class="nav-item" data-anchor="data-anchor"><a class="nav-link fw-medium" href="#faq">Insight</a></li>
             </ul>
             <form class="ps-lg-5">
-              <button class="btn btn-lg rounded-pill order-0" type="submit" href="http://wa.me/6285155424787"style="background-color: #FFDB00; border-color: #FFDB00; color: #000;font-weight: bold;">
-                CONTACT US
-              </button>
-            </form>
+              <a href="http://wa.me/6285155424787" class="btn btn-lg rounded-pill order-0" style="background-color: #FFDB00; border-color: #FFDB00; color: #000; font-weight: bold;">
+                  CONTACT US
+              </a>
+          </form>
+          
             
           </div>
         </div>
@@ -92,9 +162,9 @@
                 <span style="color: #FF8F00;">& DIGITAL TALEND CONNECTOR TALENT IN INDONESIA</span>
               </h1>
               
-              <p class="mt-3 mb-4 fs-1">Digital startup that provides consulting and workmanship services specializing in data science, big data analytics, AI, websites, UI/UX.   As well as as a digital talent connector through the Station Bridge service </p>   <button class="btn btn-lg rounded-pill order-0" type="submit" style="background-color: #FFDB00; border-color: #FFDB00; color: #000;font-weight: bold;">
-                CONTACT US
-              </button>
+            <p class="mt-3 mb-4 fs-1">Digital startup that provides consulting and workmanship services specializing in data science, big data analytics, AI, websites, UI/UX.   As well as as a digital talent connector through the Station Bridge service </p>    <a href="http://wa.me/6285155424787" class="btn btn-lg rounded-pill order-0" style="background-color: #FFDB00; border-color: #FFDB00; color: #000; font-weight: bold;">
+              CONTACT US
+          </a>
             </div>
           </div>
         </div>
@@ -102,25 +172,51 @@
       
 
 
-      <section class="py-7"  >
-
-        <div class="container" >
-          <div class="row">
+      <section class="py-7">
+        <div class="row">
             <div class="col-12 mx-auto align-items-center text-center">
-              <p class="mb-4" style="color: #FF8F00; font-family: sans-serif; font-weight: bold ;" >CLIENT & MITRA</p>
+                <h6 class="fw-bold fs-4 display-3 lh-sm"><span style="color: #FF8F00;">CLIENT & MITRA </span></h6><br /><br />
             </div>
-          </div>
-          <div class="row align-items-center justify-content-center justify-content-lg-around">
-            <div class="col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-5 mb-lg-0 text-center"><img src="assets/img/gallery/company-1.png" alt="" /></div>
-            <div class="col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-5 mb-lg-0 text-center"><img src="assets/img/gallery/company-2.png" alt="" /></div>
-            <div class="col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-5 mb-lg-0 text-center"><img src="assets/img/gallery/company-3.png" alt="" /></div>
-            <div class="col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-5 mb-lg-0 text-center"><img src="assets/img/gallery/company-4.png" alt="" /></div>
-            <div class="col-6 col-sm-4 col-md-4 col-lg-2 px-md-0 mb-5 mb-lg-0 text-center"><img src="assets/img/gallery/company-1.png" alt="" /></div>
-          </div>
         </div>
-        <!-- end of .container-->
-
-      </section>
+        <div class="slider" style="
+            background-position: bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: rgba(255, 255, 255, 0.17); 
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(255, 2, 2, 0.1);
+            backdrop-filter: blur(18px); 
+            -webkit-backdrop-filter: blur(18px);
+            border: 1px solid rgb(255, 255, 255);
+            height: auto;">
+            <div class="slider-items">
+                <img src="assets/img/illustrations/its.png" alt="">
+                <img src="assets/img/illustrations/UB.png" alt="">
+                <img src="assets/img/illustrations/atmajaya.png" alt="">
+                <img src="assets/img/illustrations/telkom.png" alt="">
+                <img src="assets/img/illustrations/ghifari2.png" alt="">
+                <img src="assets/img/illustrations/kominfo.png" alt="">
+                <img src="assets/img/illustrations/bgk.png" alt="">
+                <img src="assets/img/illustrations/mitratel.png" alt="">
+                <img src="assets/img/illustrations/Prudential.png" alt="">
+                <img src="assets/img/illustrations/brilife.png" alt="">
+    
+                <!-- Duplicated Images -->
+                <img src="assets/img/illustrations/its.png" alt="">
+                <img src="assets/img/illustrations/UB.png" alt="">
+                <img src="assets/img/illustrations/atmajaya.png" alt="">
+                <img src="assets/img/illustrations/telkom.png" alt="">
+                <img src="assets/img/illustrations/ghifari2.png" alt="">
+                <img src="assets/img/illustrations/kominfo.png" alt="">
+                <img src="assets/img/illustrations/bgk.png" alt="">
+                <img src="assets/img/illustrations/mitratel.png" alt="">
+                <img src="assets/img/illustrations/Prudential.png" alt="">
+                <img src="assets/img/illustrations/brilife.png" alt="">
+            </div>
+        </div>
+    </section>
+    
+    
       <!-- <section> close ============================-->
       <!-- ============================================-->
 
@@ -188,6 +284,12 @@
                 </div>
               </div>
             </div>
+            <div class="text-center my-4">
+              <button class="btn btn-lg rounded-pill" onclick="window.location.href='service.html'" style="background-color: #FFDB00; border-color: #FFDB00; color: #000; font-weight: bold;">
+                LEARN MORE
+              </button>
+            </div>
+            
           </div>
         </div>
       </section>
@@ -777,6 +879,23 @@
     <script src="vendors/is/is.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
     <script src="assets/js/theme.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+          },
+          loop: true,
+          breakpoints: {
+              640: { slidesPerView: 2, spaceBetween: 20 },
+              768: { slidesPerView: 3, spaceBetween: 30 },
+              1024: { slidesPerView: 4, spaceBetween: 40 },
+          }
+      });
+    </script>
+    
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400&amp;display=swap" rel="stylesheet">
   </body>
