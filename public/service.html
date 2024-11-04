@@ -29,13 +29,36 @@
     <!--    Stylesheets-->
     <!-- ===============================================-->
     <link href="assets/css/theme.css" rel="stylesheet" />
+    <style>
+      .iconheight {
+          height: 65px;
+          width: 65px;
+      }
+
+      .modal {
+          --bs-modal-width: 420px;
+      }
+
+      .getbtn {
+          background: #F2504D;
+          box-shadow: -2px 7px 20px 0px #e09897;
+      }
+
+      .getbtn:hover {
+          background: #F2504D;
+          
+      }
+      .justify-text {
+          text-align: justify;
+      }
+  </style>
     
 
 
   </head>
 
 
-  <body style="background-image: url('assets/img/illustrations/bg2.svg');" >
+  <body style="background-image: url('assets/img/illustrations/bg1.svg');" >
     
 
     <!-- ===============================================-->
@@ -99,42 +122,364 @@
               
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-4 mb-6">
-                <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="assets/img/illustrations/app.png" width="90" alt="" />
-                  <h5 class="fw-bold">Data Science, ML, Deep Learning, AI</h5>
-                  <p class="mb-md-0">Data Science, Machine Learning, Deep Learning and AI Project programming and consulting services</p>
+            <div class="container-lg">
+              <div class="row align-items-center">
+                <div class="col-md-5 col-lg-6 order-md-0 text-center text-md-start"><img class="img-fluid" src="assets/img/illustrations/feature-bg.png" width="550" alt="" /></div>
+                <div class="col-md-7 col-lg-6 px-sm-5 px-md-0">
+                  <h6 class="fw-bold fs-4 display-3 lh-sm">Data Science</h6>
+                  <p class="my-4">Turn raw data into insights to guide strategy and drive growth with analytics. </p>
+                  <div class="d-flex align-items-center mb-5">
+                    <div><img class="img-fluid" src="assets/img/illustrations/fast-performance.png" width="90" alt="" /></div>
+                    <div class="px-4">
+                      <h5 class="fw-bold text-danger">Machine Learning</h5>
+                      <p>Use algorithms to analyze data, extract patterns,<br class="d-none d-xl-block"> and make predictions, automating decisions for improved efficiency and innovation. </p>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center mb-5">
+                    <div><img class="img-fluid" src="assets/img/illustrations/prototype.png" width="90" alt="" /></div>
+                    <div class="px-4">
+                      <h5 class="fw-bold text-primary">Deep Learning & AI</h5>
+                      <p>Use deep neural networks to analyze complex data, enabling advanced pattern recognition, NLP, and<br class="d-none d-xl-block"> image classification across industries like healthcare and autonomous systems.<br class="d-none d-xl-block"> </p>
+                      <button class="btn btn-lg rounded-pill order-0" type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"style="background-color: #FFDB00; border-color: #FFDB00; color: #000;font-weight: bold;">
+                        Products
+                      </button>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content text-center" 
+                          style="  backdrop-filter: blur(10px); 
+                          background-color: rgba(255, 255, 255, 0.35); 
+                          border-radius: 16px; 
+                          border: 1px solid rgba(255, 255, 255, 0.3); 
+                          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+                          background-image: url('assets/img/illustrations/animatedbg.svg');
+                          background-position: center;
+                          background-size: cover;
+                          background-repeat: no-repeat;">
+                          <div class="modal-header border-0">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <h2 class="fw-bold text-uppercase my-4">Products</h2>
+                            <ul class="text-center p-3 px-4" style="list-style: none; padding-left: 0; text-align: justify;">
+                              <li>Object detection, Recognition</li>
+                              <li>Forecasting, Regression, Classification</li>
+                              <li>Visualization, Text Classification</li>
+                              <li>Artificial Intelligence</li>
+                              <li>Natural Language Processing</li>
+                              <li>Supervised / Unsupervised Learning</li>
+                              <li>Segmentation</li>
+                              <li>Embedded Systems</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
                 </div>
               </div>
-              <div class="col-md-4 mb-6">
-                <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="assets/img/illustrations/app.png" width="90" alt="" />
-                  <h5 class="fw-bold">Mobile App Development</h5>
-                  <p class="mb-md-0">Android and iOS application creation services</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-lg">
+          <div class="row align-items-center">
+            <div class="col-md-5 col-lg-6 order-md-0 text-center text-md-start"><img class="img-fluid" src="assets/img/illustrations/feature-bg.png" width="550" alt="" /></div>
+            <div class="col-md-7 col-lg-6 px-sm-5 px-md-0">
+              <h6 class="fw-bold fs-4 display-3 lh-sm">Mobile App Development</h6>
+              <p class="my-4">Specializing in creating custom, automated business solutions. Our expertise lies in crafting powerful, user-friendly mobile and web apps. From simple data collection tools to complex workflow solutions, I work closely with clients to bring their visions to life. </p>
+              <p class="my-4">My project phases include Discovery, UX/UI design, Infrastructure Design and Development, actual Development, Final Testing, and Launch.</p>
+              <button class="btn btn-lg rounded-pill order-0" type="submit" data-bs-toggle="modal" data-bs-target="#modalMobile"style="background-color: #FFDB00; border-color: #FFDB00; color: #000;font-weight: bold;">
+                Products
+              </button>
+            </div>
+          </div>
+          <div class="modal fade" id="modalMobile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content text-center" 
+                style="  backdrop-filter: blur(10px); 
+                background-color: rgba(255, 255, 255, 0.35); 
+                border-radius: 16px; 
+                border: 1px solid rgba(255, 255, 255, 0.3); 
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+                background-image: url('assets/img/illustrations/animbg1.svg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;">
+                <div class="modal-header border-0">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h2 class="fw-bold text-uppercase my-4">Products</h2>
+                  <ul class="text-center p-3 px-4" style="list-style: none; padding-left: 0; text-align: justify;">
+                    <li>Android App Development</li>
+                    <li>IOS App Development</li>
+                    <li>Native App Development</li>
+                    <li>App UI UX Designing & Development</li>
+                    <li>Flutter App Development</li>
+                  </ul>
+                  <h2 class="fw-bold text-uppercase my-4">Tools</h2>
+                  <ul class="text-center p-3 px-4" style="list-style: none; padding-left: 0; text-align: justify;">
+                    <li>Android Studio</li>
+                    <li>Xcode</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe XD</li>
+                    <li>Figma</li>
+                    <li>Flutter (For Web Admin Panel)</li>
+                  </ul>
                 </div>
               </div>
-              <div class="col-md-4 mb-6">
-                <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="assets/img/illustrations/cloud.png" width="90" alt="" />
-                  <h5 class="fw-bold">Website & Software Development</h5>
-                  <p class="mb-md-0">Website and software creation services</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-lg">
+          <div class="row align-items-center">
+            <div class="col-md-5 col-lg-6 order-md-0 text-center text-md-start"><img class="img-fluid" src="assets/img/illustrations/feature-bg.png" width="550" alt="" /></div>
+            <div class="col-md-7 col-lg-6 px-sm-5 px-md-0">
+              <h6 class="fw-bold fs-4 display-3 lh-sm">Website & Software Development</h6>
+            <div class="px-4">
+              <h5 class="fw-bold text-danger">Tech Stack</h5>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="list-unstyled">
+                    <li class="d-flex align-items-center py-2">
+                      <span class="bullet bullet-dot me-5"></span> Javascript
+                    </li>
+                    <li class="d-flex align-items-center py-2">
+                      <span class="bullet bullet-dot bg-danger me-5"></span> React
+                    </li>
+                    <li class="d-flex align-items-center py-2">
+                      <span class="bullet bullet-dot bg-success me-5"></span> Next.Js
+                    </li>
+                    <li class="d-flex align-items-center py-2">
+                      <span class="bullet bullet-dot bg-info me-5"></span> PHP
+                    </li>
+                    <li class="d-flex align-items-center py-2">
+                      <span class="bullet bullet-dot bg-primary me-5"></span> Laravel
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="list-unstyled">
+                    <li class="d-flex align-items-center py-2">
+                      <span class="bullet bullet-dot me-5"></span> Node.Js
+                    </li>
+                    <li class="d-flex align-items-center py-2">
+                      <span class="bullet bullet-dot bg-danger me-5"></span> Express.Js
+                    </li>
+                    <li class="d-flex align-items-center py-2">
+                      <span class="bullet bullet-dot bg-success me-5"></span> MySQL
+                    </li>
+                    <li class="d-flex align-items-center py-2">
+                      <span class="bullet bullet-dot bg-info me-5"></span> MongoDB
+                    </li>
+                    <li class="d-flex align-items-center py-2">
+                      <span class="bullet bullet-dot bg-primary me-5"></span> DevOps
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="col-md-4 mb-6">
-                <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="assets/img/illustrations/customization.png" width="90" alt="" />
-                  <h5 class="fw-bold">Web Scraping & Leads Generation</h5>
-                  <p class="mb-md-0">Website scraping and lead generation services</p>
+              <button class="btn btn-lg rounded-pill order-0" type="submit" data-bs-toggle="modal" data-bs-target="#modalWeb"style="background-color: #FFDB00; border-color: #FFDB00; color: #000;font-weight: bold;">
+                Products
+              </button>
+            </div>
+            <div class="modal fade" id="modalWeb" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content text-center" 
+                  style="  backdrop-filter: blur(10px); 
+                  background-color: rgba(255, 255, 255, 0.35); 
+                  border-radius: 16px; 
+                  border: 1px solid rgba(255, 255, 255, 0.3); 
+                  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+                  background-image: url('assets/img/illustrations/animbg2.svg');
+                  background-position: center;
+                  background-size: cover;
+                  background-repeat: no-repeat;">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h2 class="fw-bold text-uppercase my-4">Products</h2>
+                    <ul class="text-center p-3 px-4" style="list-style: none; padding-left: 0; text-align: justify;">
+                      <li>Productivity</li>
+                      <li>Finance/Accounting Software</li>
+                      <li>Project Management</li>
+                      <li>Customer Relationship Management (CRM)</li>
+                      <li>Enterprise Resource Planning (ERP)</li>
+                      <li>Human Resources (HR) Management</li>
+                      <li>Inventory Management</li>
+                      <li>Marketing Automation</li>
+                      <li>E-commerce Solutions</li>
+                      <li>Educational Software</li>
+                      <li>Health/Medical Software</li>
+                      <li>Communication/Collaboration</li>
+                      <li>Database Management</li>
+                      <li>Legal Practice Management</li>
+                      <li>Real Estate Management</li>
+                      <li>Travel/Booking Software</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-4 mb-6">
-                <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="assets/img/illustrations/ux.png" width="90" alt="" />
-                  <h5 class="fw-bold">Discord/Telegram/WA Automation</h5>
-                  <p class="mb-md-0">Telegram, Discord, WhatsApp bot creation services</p>
+            </div>
+
+            </div>
+          </div>
+          
+        </div>
+        <div class="container-lg">
+          <div class="row align-items-center">
+            <div class="col-md-5 col-lg-6 order-md-0 text-center text-md-start"><img class="img-fluid" src="assets/img/illustrations/feature-bg.png" width="550" alt="" /></div>
+            <div class="col-md-7 col-lg-6 px-sm-5 px-md-0">
+              <h6 class="fw-bold fs-4 display-3 lh-sm">Data Scraping / Crawling</h6>
+              
+              <p class="my-4">Extract specific information from webpages into new format (csv,excel) or collect URLs based on keywords.  <br>Ex : e-commerce product/price/size scrap, hotel scrap, maps link index, store and contact scrap, many more.</p>
+              <h6 class="fw-bold fs-4 display-3 lh-sm">Leads Generation</h6>
+              <p class="my-4">Automated extraction of potential customer information, such as contact details or business-related data, from various online sources, streamlining the process of building a database of leads for marketing and sales purposes.</p>
+              <button class="btn btn-lg rounded-pill order-0" type="submit" data-bs-toggle="modal" data-bs-target="#modalScrap"style="background-color: #FFDB00; border-color: #FFDB00; color: #000;font-weight: bold;">
+                Tools
+              </button>
+              <div class="modal fade" id="modalScrap" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content text-center" 
+                    style="  backdrop-filter: blur(10px); 
+                    background-color: rgba(255, 255, 255, 0.35); 
+                    border-radius: 16px; 
+                    border: 1px solid rgba(255, 255, 255, 0.3); 
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+                    background-image: url('assets/img/illustrations/animbg3.svg');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;">
+                    <div class="modal-header border-0">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <h2 class="fw-bold text-uppercase my-4">Tools</h2>
+                      <ul class="text-center p-3 px-4" style="list-style: none; padding-left: 0; text-align: justify;">
+                        <li>Python</li>
+                        <li>BeautifulSoup</li>
+                        <li>Scrapy</li>
+                        <li>Selenium</li>
+                        <li>Studio3</li>
+                        <li>TTweepy</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-4 mb-6">
-                <div class="text-center px-lg-3"><img class="img-fluid mb-3" src="assets/img/illustrations/support.png" width="90" alt="" />
-                  <h5 class="fw-bold">Station Bridge</h5>
-                  <p class="mb-md-0">Digital talent services. Providing digital talent according to company needs.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-lg">
+          <div class="row align-items-center">
+            <div class="col-md-5 col-lg-6 order-md-0 text-center text-md-start"><img class="img-fluid" src="assets/img/illustrations/feature-bg.png" width="550" alt="" /></div>
+            <div class="col-md-7 col-lg-6 px-sm-5 px-md-0">
+              <h6 class="fw-bold fs-4 display-3 lh-sm">Automation Discord/ Telegram/ Whatsapp</h6>
+              <p class="my-4">Leveraging scripts or programming to perform tasks such as responding to user queries, sending updates, processing commands, scrapping and integrating with external services.</p>
+              <div class="d-flex align-items-center mb-5">
+                <div class="px-4">
+                  <h5 class="fw-bold text-danger">Spesification</h5>
+                  <p class="my-4 pe-xl-5">
+                    <div class="row">
+                        <div class="col">
+                            <ul>
+                                <li>Language: Python 3</li>
+                                <li>Framework: Telethon/DiscordPy</li>
+                                <li>Database: MongoDB/Firebase/Redis/etc</li>
+                            </ul>
+                        </div>
+                    </div>
+                </p>
+                <button class="btn btn-lg rounded-pill order-0" type="submit" data-bs-toggle="modal" data-bs-target="#modalBot"style="background-color: #FFDB00; border-color: #FFDB00; color: #000;font-weight: bold;">
+                  Features Like
+                </button>
                 </div>
+              </div>
+              <div class="d-flex align-items-center mb-5">
+                
+              </div>
+            </div>
+            <div class="modal fade" id="modalBot" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content text-center" 
+                  style="  backdrop-filter: blur(10px); 
+                  background-color: rgba(255, 255, 255, 0.35); 
+                  border-radius: 16px; 
+                  border: 1px solid rgba(255, 255, 255, 0.3); 
+                  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+                  background-image: url('assets/img/illustrations/animbg4.svg');
+                  background-position: center;
+                  background-size: cover;
+                  background-repeat: no-repeat;">
+                  <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h2 class="fw-bold text-uppercase my-4">Features Like</h2>
+                    <ul class="text-center p-3 px-4" style="list-style: none; padding-left: 0; text-align: justify;">
+                      <li>Forward msg from/to Discord/Telegram/Twitter</li>
+                      <li>A Discord Bot which control Telegram Chats/Bots. ( or Reverse )</li>
+                      <li>A Telegram Bot which updates you on Discord Server.</li>
+                      <li>Custom Discord or Telegram</li>
+                      <li>Facbook Business Manager Verification</li>
+                      <li>Whatsapp Business API Approval</li>
+                      <li>Whatsapp Business API Complete Set Up</li>
+                      <li>Whatsapp Campaigns</li>
+                      <li>Whatsapp Chatbot</li>
+                      <li>Whatsapp Chatbot Workflow</li>
+                      <li>Whatsapp Automation</li>
+                      <li>Whatsapp Bulk Broadcast</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-lg">
+          <div class="row align-items-center">
+            <div class="col-md-5 col-lg-6 order-md-0 text-center text-md-start"><img class="img-fluid" src="assets/img/illustrations/feature-bg.png" width="550" alt="" /></div>
+            <div class="col-md-7 col-lg-6 px-sm-5 px-md-0">
+              <h6 class="fw-bold fs-4 display-3 lh-sm">Station Bridge</h6>
+              <p class="my-4">Digital talent services. Providing digital talent according to company needs.</p>
+              <div class="d-flex align-items-center mb-5">
+                <div class="px-4">
+                  <h5 class="fw-bold text-danger">Company</h5>
+                  <p class="my-4 pe-xl-5">
+                    <div class="row">
+                        <div class="col">
+                            <ul>
+                                <li>Requirement</li>
+                                <li>Framework: Telethon/DiscordPy</li>
+                                <li>Database: MongoDB/Firebase/Redis/etc</li>
+                            </ul>
+                        </div>
+                    </div>
+                </p>
+                  <h5 class="fw-bold text-danger">Company</h5>
+                  <p class="my-4 pe-xl-5">
+                    <div class="row">
+                        <div class="col">
+                            <ul>
+                                <li>Nama</li>
+                                <li>Univ</li>
+                                <li>IPK</li>
+                                <li>Whatsapp</li>
+                                <li>Linkedin</li>
+                                <li>Proyek yang pernah ditangani : (dalam list) (bahasa yang digunakan, project about)</li>
+                                <li>Portofolio : upload pdf</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center mb-5">
+                
               </div>
             </div>
           </div>
@@ -144,83 +489,7 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="py-5" id="services">
-
-        <div class="container-lg"style="
-        
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-color: rgba(255, 255, 255, 0.17); /* Semi-transparent layer */
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(255, 2, 2, 0.1);
-        backdrop-filter: blur(18px); /* Glassmorphism effect */
-        -webkit-backdrop-filter: blur(18px);
-        border: 1px solid rgb(255, 255, 255);
-        height: auto;">
-          <div class="col-lg-8 text-center mx-auto mb-3 mb-md-5 mt-4" style="max-width: 900px;">
-            <h10 class="fw-bold fs-1 display-3 lh-sm" id="whoweare">
-              <span style="color: #FF8F00;">why choose us</span>
-            </h10>
-            <br><br>
-            <p class="fw-bold ">
-              <span style="color: #000000;">With years of toil, we deliver high-quality, customized solutions that meet your needs,<br>with a focus on efficiency, client satisfaction, and affordability. </span>
-            </p>
-            
-          </div>
-       
-        
-
-          <div class="container mt-5 mb-5" >
-            <!-- First Row: Two Columns -->
-            <div class="row justify-content-center mb-4">
-              <div class="col-md-5 col-lg-5 mb-4">
-                <div class="py-4 text-center">
-                  <img class="img-fluid" src="assets/img/illustrations/manpower.png" width="90" alt="" />
-                </div>
-                <h5 class="fw-bold text-danger text-center">1. Man Power</h5>
-                <p class="mt-2 mb-0 text-center">Proven expertise with latest technology and practicioners​</p>
-              </div>
-              <div class="col-md-5 col-lg-5 mb-4">
-                <div class="py-4 text-center">
-                  <img class="img-fluid" src="assets/img/illustrations/design.png" width="90" alt="" />
-                </div>
-                <h5 class="fw-bold text-warning text-center">2. Design</h5>
-                <p class="mt-2 mb-0 text-center">Tailored solutions that streamline your processes and enhance user experience​</p>
-              </div>
-            </div>
-          
-            <!-- Second Row: Three Columns -->
-            <div class="row justify-content-center">
-              <div class="col-md-4 col-lg-3 mb-4">
-                <div class="py-4 text-center">
-                  <img class="img-fluid" src="assets/img/illustrations/develop.png" width="90" alt="" />
-                </div>
-                <h5 class="fw-bold text text-center">3. Deployment</h5>
-                <p class="mt-2 mb-0 text-center">Full-cycle app development from planning to deployment​</p>
-              </div>
-              <div class="col-md-4 col-lg-3 mb-4">
-                <div class="py-4 text-center">
-                  <img class="img-fluid" src="assets/img/illustrations/testing.png" width="90" alt="" />
-                </div>
-                <h5 class="fw-bold text-success text-center">4. Testing</h5>
-                <p class="mt-1 mb-0 text-center">Rigorous QA to ensure your applications are bug-free and optimized​</p>
-              </div>
-              <div class="col-md-4 col-lg-3 mb-4">
-                <div class="py-4 text-center">
-                  <img class="img-fluid" src="assets/img/illustrations/customer-service.png" width="90" alt="" />
-                </div>
-                <h5 class="fw-bold text-primary text-center">5. Support</h5>
-                <p class="mt-2 mb-0 text-center">Ongoing maintenance and updates to keep your system at its best​</p>
-              </div>
-            </div>
-          </div>
-          
-      </div>
-        
-        
-        <!-- end of .container-->
-
-      </section>
+      
       <!-- <section> close ============================-->
       <!-- ============================================-->
 
@@ -229,24 +498,62 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="py-6">
-
-        <div class="container-lg"style="
-        
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-color: rgba(255, 255, 255, 0.17); /* Semi-transparent layer */
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(255, 2, 2, 0.1);
-        backdrop-filter: blur(18px); /* Glassmorphism effect */
-        -webkit-backdrop-filter: blur(18px);
-        border: 1px solid rgb(255, 255, 255);
-        height: auto;">
 
 
+        <section class="py-8 bg-1000">
 
-
-
+          <div class="container">
+            <div class="row flex-center">
+              <div class="col-auto mb-5"><a class="pe-2 d-flex align-items-center text-decoration-none fw-bold fs-3" href="#">
+                <img src="assets/img/illustrations/newlogo.png" alt="Logo" class="rounded-circle" width="400" height="auto" style="margin-left: -28px;">
+                </a></div>
+            </div>
+            <div class="row flex-center">
+              <div class="col-auto mb-5">
+                <ul class="list-unstyled list-inline mb-0">
+                  <li class="list-inline-item me3 me-sm-4"><a class="text-light text-decoration-none" href="#!">Home</a></li>
+                  <li class="list-inline-item me3 me-sm-4"><a class="text-light text-decoration-none" href="#!">Services</a></li>
+                  <li class="list-inline-item me3 me-sm-4"><a class="text-light text-decoration-none" href="#!">Case Studies</a></li>
+                  <li class="list-inline-item me3 me-sm-4"><a class="text-light text-decoration-none" href="#!">Who We Are</a></li>
+                  <li class="list-inline-item me3 me-sm-4"><a class="text-light text-decoration-none" href="#!">Insight</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row flex-center">
+              <div class="col-auto mb-5">
+                <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item me-3"><a class="text-decoration-none" href="#!">
+                      <svg class="bi bi-facebook" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#7D7987" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+                      </svg></a></li>
+                  <li class="list-inline-item me-3"><a href="#!">
+                      <svg class="bi bi-twitter" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#7D7987" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+                      </svg></a></li>
+                  <li class="list-inline-item me-3"><a href="#!">
+                      <svg class="bi bi-hash" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 16 16">
+                        <path d="M8.39 12.648a1.32 1.32 0 0 0-.015.18c0 .305.21.508.5.508.266 0 .492-.172.555-.477l.554-2.703h1.204c.421 0 .617-.234.617-.547 0-.312-.188-.53-.617-.53h-.985l.516-2.524h1.265c.43 0 .618-.227.618-.547 0-.313-.188-.524-.618-.524h-1.046l.476-2.304a1.06 1.06 0 0 0 .016-.164.51.51 0 0 0-.516-.516.54.54 0 0 0-.539.43l-.523 2.554H7.617l.477-2.304c.008-.04.015-.118.015-.164a.512.512 0 0 0-.523-.516.539.539 0 0 0-.531.43L6.53 5.484H5.414c-.43 0-.617.22-.617.532 0 .312.187.539.617.539h.906l-.515 2.523H4.609c-.421 0-.609.219-.609.531 0 .313.188.547.61.547h.976l-.516 2.492c-.008.04-.015.125-.015.18 0 .305.21.508.5.508.265 0 .492-.172.554-.477l.555-2.703h2.242l-.515 2.492zm-1-6.109h2.266l-.515 2.563H6.859l.532-2.563z"></path>
+                      </svg></a></li>
+                  <li class="list-inline-item me-3"><a href="#!">
+                      <svg class="bi bi-instagram" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#7D7987" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"> </path>
+                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- <div class="row flex-center">
+              <div class="col-auto">
+                <p class="mb-0 fs--1 text-700">&copy; This template is made with&nbsp;
+                  <svg class="bi bi-suit-heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" viewBox="0 0 16 16">
+                    <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"></path>
+                  </svg>&nbsp;by&nbsp;<a class="text-700" href="https://themewagon.com/" target="_blank">ThemeWagon </a>
+                </p>
+              </div>
+            </div> -->
+          </div>
+          <!-- end of .container-->
+  
+        </section>
     </main>
     <!-- ===============================================-->
     <!--    End of Main Content-->
